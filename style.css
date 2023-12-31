@@ -1,48 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: black;
     color: white;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-hr{
+hr {
     border: 0;
     height: 3px;
     background: rgb(124, 124, 126);
     margin: 0px 106px;
-  }
+}
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 80px;
     background-color: rgb(39, 39, 38);
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     margin: 0px 30px;
     list-style: none;
     position: relative;
     cursor: pointer;
     color: white;
     text-decoration: none;
-    
+
 }
 
-.left{
+.left {
     font-size: 1.5rem;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0px;
     background: #ff7676;
@@ -52,30 +55,34 @@ nav ul li a::after{
     bottom: -6px;
     left: 0;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 65px;
 }
 
 /* --------------- main css ------------- */
 
-.firstSection{
+.firstSection {
     display: flex;
     justify-content: space-around;
-    margin: 23px 0px;
+
     margin: 70px 0px;
 }
 
 
-.firstSection > div{
+.firstSection>div {
     width: 35%;
-   
+
 }
-.leftSection{
-    font-size: 2.5rem;
-    margin: 171px 0px; 
-    width: 40%;
+
+.leftSection {
+    font-size: 1.5rem;
+    margin: 100px 0px;
+    width: 30%;
+    margin-left: 20px;
 }
-.leftSection .btn{
+
+.leftSection .btn {
     background: #000000;
     color: white;
     font-size: 18px;
@@ -86,52 +93,65 @@ nav ul li a:hover::after{
     border: solid 2px white;
 }
 
-.rightSection img{
+.rightSection {
+    margin-right: -25px;
+}
 
-   width: 90%;
+.rightSection img {
+
+    width: 90%;
 }
 
 
 /* <!-- ---------------------- Second Section ----------------> */
-.SecondSection{
+.SecondSection {
     background-color: #111111;
     padding: 80px;
-    height: 100vh;
+    height: 120vh;
 }
-.container{
+
+.container {
     margin: 0px 5%;
 }
-.row{
+
+.row {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.Second-col-left{
-   flex-basis: 35%;
+
+.Second-col-left {
+    flex-basis: 35%;
 }
-.Second-col-left img{
+
+.Second-col-left img {
     width: 100%;
     height: 80%;
     border-radius: 20px;
+
 }
-.second-col-right{
+
+.second-col-right {
     flex-basis: 60%;
 }
 
-.second-col-right .about_me{
+.second-col-right .about_me {
     color: gray;
     font-size: 1.2rem;
 }
-.second-col-right .skills{
+
+.second-col-right .skills {
     color: rgb(4, 236, 217);
-    font-size:2rem;
+    font-size: 2rem;
 
 }
-.second-col-right h1{
+
+.second-col-right h1 {
     flex-basis: 60%;
     font-size: 2rem;
     font-weight: 600;
 }
-.tab{
+
+.tab {
     margin-top: 20px;
     font-size: 1.5rem;
 }
@@ -139,49 +159,55 @@ nav ul li a:hover::after{
 
 /* <!-- ---------------------- Third Section ----------------> */
 
-.thirdSection{
+.thirdSection {
     margin: 4% 11%;
-    height: 110vh;
+    height: 130vh;
 }
 
-.thirdSection h1{
+.thirdSection h1 {
     font-size: 2rem;
     font-weight: 600;
     padding: 1px;
 }
-.thirdSection .box{
+
+.thirdSection .box {
     background: white;
     width: 70vw;
     height: 3px;
-    margin: 80px -21px; 
+    margin: 80px -21px;
     display: flex;
-    
+
 }
 
-.thirdSection .vertical{
+.thirdSection .vertical {
     background: white;
     width: 4px;
     height: 15vh;
-    
+
 }
 
-.image-top{
+.thirdSection #vertical_1 {
+    margin-left: 450px;
+}
+
+.image-top {
     position: relative;
     width: 68px;
     top: -71px;
     left: -20px;
 }
 
-.vertical-title{
-        position: relative;
-        top: 44px;
-        left: 0px;
-        width: 370px;
-        height: 90px;
-        font-size: 22px;
-        color: red;
+.vertical-title {
+    position: relative;
+    top: 44px;
+    left: 0px;
+    width: 370px;
+    height: 90px;
+    font-size: 22px;
+    color: red;
 }
-.vertical-description{
+
+.vertical-description {
     position: relative;
     top: 60px;
     width: 400px;
@@ -189,46 +215,166 @@ nav ul li a:hover::after{
     color: gray;
 }
 
-.vertical-description li{
+.vertical-description li {
     font-size: 16px;
 }
 
+
+.fourthSection {
+    margin: 4% 11%;
+    height: 130vh;
+}
+
+
+
+
+.fourthSection h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1px;
+}
+
+.fourthSection .box {
+    background: white;
+    width: 70vw;
+    height: 3px;
+    margin: 80px -21px;
+    display: flex;
+
+}
+
+.fourthSection .vertical {
+    background: white;
+    width: 4px;
+    height: 15vh;
+
+}
+
+.fourthSection #vertical_1 {
+    margin-left: 450px;
+}
+
+
+
 /* <!-- ------------------- Fifth Section ----------------    --> */
-footer{
+footer {
     background-color: rgb(8, 8, 19);
     height: 400px;
 }
 
-.footer_item{
+.footer_item {
     display: flex;
 }
-.footer_first{
+
+.footer_first {
     margin: 50px 167px;
     font-size: 22px;
     font-weight: 200;
 }
-.footer_Second{
+
+.footer_Second {
     margin: 50px 167px;
     font-size: 22px;
     font-weight: 200;
 }
-.icon{
+
+.icon {
     position: relative;
     width: 35px;
     top: 10px;
     left: -64px;
     margin: 4px;
-  }
-
-
-.contact_detail{
-    list-style: none;
-    margin: 17px 4px 
 }
-.contact_detail li a{
+
+
+.contact_detail {
+    list-style: none;
+    margin: 17px 4px
+}
+
+.contact_detail li a {
     color: white;
     margin-left: -55px;
 }
-.detail{
+
+.detail {
     margin-top: -40px;
+}
+
+@media screen and (max-width: 1180px) {
+
+    .firstSection {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Second-col-left img {
+        width: 18%;
+        height: 96%;
+        border-radius: 20px;
+        margin-left: 312px;
+    }
+
+    .skills {
+        margin: 27px 387px;
+    }
+
+    .SecondSection {
+        padding: 80px;
+        height: 100vh;
+    }
+
+    .tab div ul li {
+        margin-top: 22px;
+    }
+
+    .thirdSection.box {
+        width: 40vw;
+        height: 3px;
+    }
+
+    .image-top {
+        position: relative;
+        width: 68px;
+        top: 150px;
+        left: -71px;
+    }
+
+    .thirdSection .vertical {
+        height: 60vh;
+    }
+
+    .thirdSection #vertical_1 {
+        margin: 568px 4px;
+        margin-left: -4px;
+    }
+
+    .vertical-title {
+        left: 25px;
+    }
+
+    .vertical-description {
+        left: 30px;
+    }
+
+
+    .fourthSection .box {
+        width: 40vw;
+        height: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .fourthSection .vertical {
+        height: 60vh;
+        margin-left: 130px;
+    }
+
+
 }
