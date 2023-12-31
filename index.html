@@ -17,11 +17,11 @@
             <div class="left">Shubham's Protfolio</div>
             <div class="right">
                 <ul>
-                    <li class="home"> <a href="#">Home </a></li>
-                    <li class="about"> <a href="#">About </a></li>
-                    <li class="services"> <a href="#">Experience </a></li>
-                    <li class="project"> <a href="#">Project </a></li>
-                    <li class="contact"> <a href="#">Contact Me </a></li>
+                    <!-- <li class="home"> <a href="#">Home </a></li> -->
+                    <li class="about"> <a href="#about">About </a></li>
+                    <li class="services"> <a href="#experience">Experience </a></li>
+                    <li class="project"> <a href="#education">Education </a></li>
+                    <li class="contact"> <a href="#contact">Contact Me </a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +38,7 @@
                 <span id="element" style="color: rgb(241, 8, 172);"></span>
                 <br>
                 <div class="buttons">
-                    <button class="btn" type="button">Download CV</button>
+                    <a href="resume.pdf"><button class="btn" type="button">Download CV</button></a>
                     <a href="https://github.com/Shubham879177" target="_blank"><button class="btn" type="button">Visit
                             GitHub</button></a>
                 </div>
@@ -50,7 +50,7 @@
     </main>
     <hr>
     <!-- ---------------------- Second Section --------------  -->
-    <div class="SecondSection">
+    <div class="SecondSection" id="about">
         <div class="container">
             <div class="row">
                 <div class="Second-col-left">
@@ -95,7 +95,7 @@
     </div>
     <hr>
     <!-- ------------------- Third Section ----------------    -->
-    <div class="thirdSection">
+    <div class="thirdSection" id="experience">
         <span style="color: gray;">What I have done so far</span>
         <h1>Work Experience</h1>
         <div class="box">
@@ -139,7 +139,7 @@
     </div>
     <hr>
     <!-- ---------------------- Fourth Section --------------------  -->
-    <div class="fourthSection" style="height: 80vh;">
+    <div class="fourthSection" id = "education" style="height: 80vh;">
         <span style="color: gray;">What I have done</span>
         <h1>Education</h1>
         <div class="box">
@@ -173,7 +173,7 @@
     <!-- ------------------- Fifth Section ----------------    -->
     <hr>
     <footer>
-        <div class="footer_item">
+        <div class="footer_item" id="contact">
             <div class="footer_first">
                 <h2>Shubham's Portfolio</h2>
             </div>
@@ -194,6 +194,11 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -201,6 +206,19 @@
             typeSpeed: 40,
         });
     </script>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
 
 </body>
 
