@@ -136,6 +136,7 @@ nav ul li a:hover::after{
     font-size: 1.5rem;
 }
 
+
 /* <!-- ---------------------- Third Section ----------------> */
 
 .thirdSection{
@@ -150,7 +151,7 @@ nav ul li a:hover::after{
 }
 .thirdSection .box{
     background: white;
-    width: 80vw;
+    width: 70vw;
     height: 3px;
     margin: 80px -21px; 
     display: flex;
@@ -161,7 +162,7 @@ nav ul li a:hover::after{
     background: white;
     width: 4px;
     height: 15vh;
-    margin: 0px 79px;
+    
 }
 
 .image-top{
